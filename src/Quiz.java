@@ -58,6 +58,14 @@ public class Quiz {
         }
         number_of_question++;
     }
+    public void play(Question[] question1,Answer[] answer1, int kolvo_voprosov, Quiz game1){
+        int counter = 0;
+        Scanner in  = new Scanner(System.in);
+        while (counter < kolvo_voprosov){
+            game1.c(question1, answer1);
+            counter++;
+        }
+    }
     public void byebye(){
         System.out.println("Спасибо за игру! Ваш результат:\n ... \n Ой, забыли посчитать... Давайте еще раз! \n " +
                 "... \n Ладно, не очень-то и хотелось. Ваш результат:" + score);

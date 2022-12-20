@@ -7,7 +7,7 @@ public class Main {
         answer1[1] = new Answer("Обман чистой воды", false);
         answer1[2] = new Answer("Хороший вопрос! Не знаю", false);
         int kolvo_voprosov = 3;
-        int counter = 0;
+
 
         Question[] question1 = new Question[kolvo_voprosov];
         question1[0] = new Question("Снег бывает не только белым. Черный снегопад шокировал жителей Швеции в 1969 году, " +
@@ -23,11 +23,7 @@ public class Main {
 
         Quiz game1 = new Quiz("Угадайте правда или ложь!",question1);
         game1.start();
-        Scanner in  = new Scanner(System.in);
-        while (counter < kolvo_voprosov){
-            game1.c(question1, answer1);
-            counter++;
-        }
+        game1.play(question1, answer1, kolvo_voprosov, game1);
         game1.byebye();
     }
 }
