@@ -35,9 +35,9 @@ public class Quiz {
                 score++;
             }
             else {
-                if (answer[opinion - 1].value.equals("Правда")){
-                    System.out.println("Ха-ха-ха, обманули дурака на четыре кулака!");
-                }
+                //if (answer[opinion - 1].value.equals("Правда")){
+                 //   System.out.println("Ха-ха-ха, обманули дурака на четыре кулака!");
+                //}
                 if (answer[opinion - 1].value.equals("Хороший вопрос! Не знаю")){
                     if (answer[0].correct){
                         System.out.println("Это " + answer[0].value);
